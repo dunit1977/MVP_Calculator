@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title>Wolfpack Calculator</title>
+</head>
+<body>
+
+<div>Wolfpack Calculator</div>
+<img src="https://media1.tenor.com/images/be5461967878f9229ae8656d62025a1e/tenor.gif?itemid=6219070">
+	<form action="/" method="post">
+
+		<label>First Number <input type="number" name="firstNumber" required>
+		</label> <select name="operator">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>^</option>
+		</select> <label>Second Number <input type="number" name="secondNumber" required>
+		</label>
+		<button>Calculate</button>
+	</form>
+	{{ calculator.getResult }}
+{{! #answer}}
+{{! firstNumber }}
+{{! operator }}
+{{! secondNumber }}
+{{! /answer}}
+
+</body>
+</html>
